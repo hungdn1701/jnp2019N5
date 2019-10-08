@@ -22,12 +22,12 @@ public class HttpClient {
         try {
             Socket client = new Socket("ptit.edu.vn", 80);
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
-//            String str = "GET / HTTP/1.1\r\n"
-//                    + "Host: localhost:8080\r\n"
-//                    + "User-Agent: Mozilla/5.0 hungdn/1.0\r\n"
-//                    + "Connection: keep-alive\r\n"
-//                    + "Accept: text/html\r\n";
-            String str = "hello ptit.edu.vn";
+            String str = "GET / HTTP/1.1\r\n"
+                    + "Host: localhost:8080\r\n"
+                    + "User-Agent: Mozilla/5.0 hungdn/1.0\r\n"
+                    + "Connection: keep-alive\r\n"
+                    + "Accept: text/html\r\n";
+//            String str = "hello ptit.edu.vn";
             out.write(str);
             out.newLine();
             out.flush();
